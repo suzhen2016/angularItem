@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="appController">
+	<head>
+		<meta charset="UTF-8">
+		<title>完整的angular搭建网站的模板</title>
+		<link rel="stylesheet" href="css/myApp.css" />
+	</head>
+	<style>
+	</style>
+	<body>
+		<header>
+			<nav>
+				一个完整的angular的模板,带有http请求的异步执行的使用！
+			</nav>
+		</header>
+		<section class="content-box">
+			<!--视口-->
+			<div class="item-box">
+				<li><a ui-sref="about">首页</a></li>
+				<li><a ui-sref="page">分页</a></li>
+				<li><a ui-sref="footer">尾页</a></li>
+			</div>
+			<ui-view class="content">
+				
+			</ui-view>
+		</section>
+		<footer>
+			<h3>页面的低部</h3>
+		</footer>
+	</body>
+	<!--//引入各个的模块；-->
+	<script src="lid/js/angular.js" type="text/javascript" charset="utf-8"></script>
+	<!--路由的使用文件-->
+	<script src="lid/js/angular-ui-router.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/myApp.js"></script>
+	<script src="js/myController.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/myService.js" type="text/javascript" charset="utf-8"></script>
+</html>

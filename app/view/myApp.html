@@ -1,0 +1,10 @@
+
+<div class="content">
+	<p>开始</p>
+	<h1>{{name}}</h1>
+	<h2>progress:{{progress}}</h2>
+	<h3 ng-show="show">正在加载，请等待一下哈！</h3>
+	<ul>
+		<li ng-repeat="item in data">{{item.login?item.login:item}}</li>
+	</ul>
+</div>
